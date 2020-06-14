@@ -23,6 +23,7 @@ services:
 
   db:
     image: postgres:10-alpine
+    restart: always
     environment:
       - POSTGRES_DB=mozmarket
       - POSTGRES_USER=mozmarket
